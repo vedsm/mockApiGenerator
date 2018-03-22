@@ -1,0 +1,54 @@
+{
+  "root": "/",
+  "cruds": [
+    {
+      "method": "GET",
+      "response": {"message":"This is root of Dummy Api Contracts of mfine!"}
+    }
+  ],
+  "children": [
+    {
+      "root": "/api",
+      "cruds": [
+        {
+          "method": "GET",
+          "response": {"message":"This is root of api models!"}
+        }
+      ],
+      "children": [
+        {
+          "root": "/userservice",
+          "cruds": [
+            {
+              "method": "GET",
+              "response": {"message":"This is root of api userservice models!"}
+            }
+          ],
+          "children": [
+            {
+              "root": "/user",
+              "cruds": [
+                {
+                  "method": "GET",
+                  "response": {"message":"This is root of api userservice user model!"}
+                }
+              ],
+              "children": [
+                {
+                  "root": "/:usernamevariable/*",
+                  "cruds": [
+                    {
+                      "method": "GET",
+                      "response": {"message":"This is root of api userservice user /:usernamevariable method!"}
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

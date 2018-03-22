@@ -1,0 +1,19 @@
+{
+  "name": "loadingbay",
+  "version": "1.0.0",
+  "description": "This is the repository which has static dummy api contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mfinedev@bitbucket.org/novocura/dummyapicontract.git"
+  },
+  "author": "Ved Mulkalwar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/novocura/pronto#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
